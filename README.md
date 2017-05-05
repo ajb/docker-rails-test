@@ -1,7 +1,7 @@
 Docker Rails Test
 ---
 
-Just getting a local Rails development environment setup with Docker. This `Dockerfile` is not intended to be built for deployment.
+Rails development environment via Docker. Most notably, this setup includes a volume for gems, so that updating a gem does not require re-building the Docker image. This `Dockerfile` is not currently intended to be built for deployment.
 
 ## Getting started
 
