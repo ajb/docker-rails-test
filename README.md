@@ -10,8 +10,16 @@ Just getting a local Rails development environment setup with Docker. This `Dock
 - Run `docker-compose run web bundle exec rake db:create` to create the database
 - Visit http://localhost:3000 in your web browser.
 
+## Restarting your web server
+
+If you make a change to your codebase that requires you to restart Rails, simply `control+c` and relaunch the `docker-compose up` process.
+
 ## Updating gems
 
 - Update your `Gemfile`
-- Stop the `docker-compose` process (control-c or `docker-compose stop` depending on how you ran it)
-- Run with `docker-compose up`
+- Run `docker-compose run web bundle`
+- Restart your web server
+
+## Handy tips
+
+- Alias `docker-compose run web` to `dcr` or something short
